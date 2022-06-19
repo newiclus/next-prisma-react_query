@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./db/nfts.db"
+}
+
+model User {
+  id        String   @id @default(cuid())
+  username  String   @unique
+  avatar    String
+  fullname  String
+  bio       String
+  email     String
+  password  String
+  nfts      Nft[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now())
+}
+
+model Nft {
+  id          String   @id @default(cuid())
+  name        String
+  image       String
+  description String
+  price       Float
+  forSale     Boolean
+  owner       User?    @relation(fields: [ownerId], references: [id])
+  ownerId     String?
+  stock       Int
+  supply      Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @default(now())
+}
