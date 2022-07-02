@@ -1,0 +1,11 @@
+.content {
+  @apply inline-block m-0 p-0 relative;
+}
+
+.body {
+  @apply m-0 p-0 text-center align-middle inline-block overflow-hidden rounded-full;
+}
+
+.verified {
+  @apply m-0 p-0 absolute -bottom-1 -right-1;
+}
