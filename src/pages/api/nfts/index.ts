@@ -19,9 +19,7 @@ export default async function handle(req: NextApiRequest, res: NextApiResponse) 
       },
     })
 
-    res.status(200).json(nft)
-
-    return
+    return res.status(200).json(nft)
   }
 
   const nfts = await prisma.nft.findMany({

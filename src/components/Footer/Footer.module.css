@@ -1,0 +1,15 @@
+.nav {
+  @apply text-right;
+}
+
+.navItem {
+  @apply mx-3 hover:underline;
+}
+
+.logos {
+  @apply text-center;
+}
+
+.sponsor {
+  @apply mx-4 saturate-50 grayscale;
+}

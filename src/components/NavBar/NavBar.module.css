@@ -1,3 +1,11 @@
 .logoTitle {
   @apply inline-block font-black pl-2 text-xl text-slate-500 align-middle;
 }
+
+.content {
+  @apply flex justify-end space-x-4;
+}
+
+.item {
+  @apply rounded-lg px-3 py-2 text-slate-700 font-black hover:bg-slate-100 hover:text-slate-900;
+}
