@@ -3,7 +3,7 @@
 }
 
 .navItem {
-  @apply mx-3 hover:underline;
+  @apply mx-4 hover:underline;
 }
 
 .logos {

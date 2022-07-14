@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <>
       <NavBar />
 
-      <main className="limit">{children}</main>
+      <main>{children}</main>
 
       <Footer />
     </>

@@ -1,5 +1,13 @@
-import React from 'react'
+import MainBanner from './MainBanner'
+import NotableNfts from './NotableNfts'
+import TopUsers from './TopUsers'
 
 export default function Home() {
-  return <h1>Home</h1>
+  return (
+    <>
+      <MainBanner />
+      <NotableNfts />
+      <TopUsers />
+    </>
+  )
 }

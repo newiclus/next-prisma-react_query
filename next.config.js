@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['svelte.dev'],
+    domains: ['svelte.dev', 'robohash.org', 'img.seadn.io'],
   },
 }
 

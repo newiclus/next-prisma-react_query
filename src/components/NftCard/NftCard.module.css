@@ -1,0 +1,14 @@
+.content {
+  @apply max-w-sm bg-white rounded overflow-hidden shadow-lg m-auto relative;
+}
+
+.info {
+  @apply px-6 py-4;
+}
+
+.overlay {
+  @apply bg-gradient-to-t from-pink-500/[.7] absolute left-0 bottom-0;
+  z-index: 100;
+  color: white;
+  width: 100%;
+}
